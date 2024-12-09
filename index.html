@@ -26,7 +26,7 @@
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
 					<!-- Buttons for Task 3 and Task 4 should be placed here -->
-					
+					<li><a href="#">Change Directions</a></li>
 				</ul>
 			</div>
 		</div>
@@ -62,15 +62,20 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onClick = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
+					<img onmouseover="Buttonappear()" src="assets/img/compIcon.png" id="imageTask1"><br />
+					<button style="display:none" onclick="dissapear()" id="buttonTask1">Click Me</button>
 					<hr>
 										
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
-					
-					
-					<table class="table table-striped">
+					<!-- Blue Button -->
+					<button id="Blue" onclick="Blue()">Blue</button>
+					<!-- Red Button -->
+					<button id="Red" onclick="Red()">Red</button>
+					<!-- Green Button -->
+					<button id="Green" onclick="Green()">Green</button>
+
+					<table class="table table-striped" id="table">
 						<thead>
 							<tr>
 								<th>#</th>
